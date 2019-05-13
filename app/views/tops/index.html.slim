@@ -21,15 +21,17 @@
                 strong
                   | 56万円
             
-    .col-sm-4.box1
-      p
-        | 毎月20名様限定受付
+    .col-sm-4.visible-md.visible-lg
+        .box1
+          p
+            | 毎月20名様限定受付
+        = image_tag 'information.png', height:'400px', class: 'information'
         
 
 /# inquiry image
 .row
   .col-sm-12.center
-    =link_to "#" do
+    =link_to "/contact" do
       =image_tag 'question1.png', width: '70%', class: 'center'
 
 br
@@ -41,19 +43,18 @@ br
 /# push font    
 h2.push
    span
-     | まずは事例をご覧下さい！ご依頼頂いた
+     | まずは事例をご覧下さい！69%の方が
      br
-     |  69%の方が、いずれかの手当を受給しています！
+     |  退職代行に追加していずれか手当を受給しています！
    
 br
 br
 
 /# Comparison
 table.company.center
-  col[width="25%"]
-  col[width="25%"]
-  col[width="25%"]  
-  col[width="25%"]
+  col[width="20%"]
+  col[width="40%"]
+  col[width="40%"]  
   tbody
     tr
       th.arrow_box
@@ -64,7 +65,7 @@ table.company.center
         | ベンチャー企業のBさん
     tr
       th.arrow_box
-        | 退職に関する予告手当
+        | 解雇予告手当
       td.price
         span
            | 0円→240,000円
@@ -73,7 +74,7 @@ table.company.center
            | 0円→350,000円
     tr
       th.arrow_box
-        | 有休消化
+        | 有休休暇消化
       td.price
         span
            | 0円→150,000円
@@ -82,7 +83,7 @@ table.company.center
            | 0円→90,000円
     tr
       th.arrow_box
-        | 解雇後の保険受給
+        | 雇用保険受給増額
       td.price
         span
            | 120,000円→350,000円
@@ -119,7 +120,7 @@ h2.push
    span
      | まだまだ実例があります！
      br
-     |  上記は貰う権利がある正当な金額です！
+     |  上記は真っ当に貰う権利がある正当な金額です！
    
 br
 br
@@ -127,7 +128,7 @@ br
 /# inquiry image           
 .row
   .col-sm-12.center
-    =link_to "#" do
+    =link_to "/contact" do
       =image_tag 'question1.png', width: '70%', class: 'center'
       
 br
@@ -145,7 +146,7 @@ br
   br
   br
   h6.heading
-    | 当社は退職トータルサポート会社です。退職代行サービスは近年注目を集めておりますが、退職する際、労働基準法上で本来受けることが出来る手当を受けられずに退職するケースが当社調べで69%に達しています。退職は労働者の権利です。正当な方法で退職をし、損をしないよう退職トータルサポートを利用して下さい。
+    | 当社は退職トータルサポート会社です。退職代行サービスは近年注目を集めておりますが、退職する際、労働基準法上で本来受けることが出来る手当を受けられずに退職するケースが当社調べで69%に達しています。労働、休暇と同じように退職は労働者の権利です。正当な方法で退職をし、更に本来貰うべく金額を貰えず泣き寝入りしないよう、当社が徹底サポート致します。
   .row
     .col-sm-1 
     br
@@ -153,13 +154,11 @@ br
     .col-sm-4.center
       = image_tag "distress.jpg"
     br
-    br
-    br
     .col-sm-7
        p
          strong
            | ☑︎  
-         |  今の退職したいけど、面と向かって言いづらい
+         |  今の職場を退職したいけど、言いづらいから代わりに連絡して欲しい
          br
          b.h4
          strong
@@ -169,12 +168,12 @@ br
          b.h4
          strong
            | ☑︎ 
-         |  残業代が１円も今まで払われていない
+         |  未払いの残業代があることを証明出来る・または作ることが出来る
          br
          b.h4
          strong
            | ☑︎ 
-         |  退職後の保険の受給方法を知りたい
+         |  退職後の保険の受給方法を知りたい・最大限に受給したい
          b.h4
 
 br
@@ -196,7 +195,7 @@ br
 /# inquiry image
 .row
   .col-sm-12.center
-    =link_to "#" do
+    =link_to "/contact" do
       =image_tag 'question1.png', width: '70%', class: 'center'
 
 br
@@ -224,8 +223,8 @@ br
     br
     p
       | 退職代行サポートでは、通常かかる着手金は頂いておりません。退職が完了した時点でお支払い頂く後払いの仕組みを取っているため、先にお金をかける心配はご無用です。
-  .col-sm-1
-    = image_tag "distress.jpg", height: '200px'
+  .col-sm-1.visible-md.visible-lg
+    = image_tag "person1.jpg", height: '200px'
 br
 
 .row
@@ -239,9 +238,9 @@ br
           | 退職代行だけでもお得!!
     br
     p
-      | 退職代行サポートでは、業界でも価格は最安値の設定しております。独自のオペレーションを構築する事で、コスト削減を実現しました。正社員、パートに関わらず25,000円でお財布にも優しい。
-  .col-sm-1
-    = image_tag "distress.jpg", height: '200px'
+      | 退職代行サポートでは、業界でも価格は最安値の設定しております。独自のオペレーションを構築する事で、コスト削減を実現しました。正社員、パートに関わらず一律25,000円で更に後払いのためお財布にも優しい。
+  .col-sm-1.visible-md.visible-lg
+    = image_tag "person5.jpg", height: '200px'
 br
 
 .row
@@ -250,14 +249,14 @@ br
   .col-sm-7
     h2.heading
        strong.wide
-          | 適正判断!! 
+          | 退職金を増やす!! 
        small.bold
-          | 退職理由を突き詰めます!!
+          | 適正なヒアリング!!
     br
     p
       | 労務管理のスペシャリストを配置する退職トータルサポートでは、退職する事になった原因迄しっかりヒアリングさせて頂きます。理由や状況によっては今後受け取れる失業手当が当初の３倍以上になるケースも多々あり、非常にご好評頂いております。
-  .col-sm-1
-    = image_tag "distress.jpg", height: '200px'
+  .col-sm-1.visible-md.visible-lg
+    = image_tag "person3.jpg", height: '200px'
 br
 
 .row
@@ -271,9 +270,9 @@ br
           | 失業手当の受給!!
     br
     p
-      | 失業手当を貰える人でも、実際受給方法を知らない方がほとんど。しかし、しっかりステップを追って実施する事で満額受給を達成する事が出来ちゃいます。
-  .col-sm-1
-    = image_tag "distress.jpg", height: '200px'
+      | 失業手当を貰える人でも、実際受給方法を知らない方がほとんど。しっかりステップを追って実施する事で満額受給を達成する事が出来ます。退職トータルサポートでは満額受給を行うための手法をeBookにてご提供させて頂いております。
+  .col-sm-1.visible-md.visible-lg
+    = image_tag "person8.jpg", height: '200px'
 br
 
 .row
@@ -282,14 +281,14 @@ br
   .col-sm-7
     h2.heading
        strong.wide
-          | 最大1ヶ月分!!
+          | 最大1ヶ月分受給!! 
        small.bold
           | 解雇手当もお手伝い!!
     br
     p
       | 実は退職時、状況によっては最大1ヶ月分の解雇手当を支払うと言う労働基準法が存在します。あなたの状況によっては最大1ヶ月分の給料を追加で受け取る事が出来ます。
-  .col-sm-1
-    = image_tag "distress.jpg", height: '200px'
+  .col-sm-1.visible-md.visible-lg
+    = image_tag "person7.jpg", height: '200px'
 br
 
 .row
@@ -304,8 +303,8 @@ br
     br
     p
       | 有給は今までしっかり消化していましたか？有給とは労働者が持つ権利です。有給を消化できるよう、退職トータルサポートでしっかりサポートします。
-  .col-sm-1
-    = image_tag "distress.jpg", height: '200px'
+  .col-sm-1.visible-md.visible-lg
+    = image_tag "person2.jpg", height: '200px'
 br
 
 .row
@@ -319,8 +318,8 @@ br
           | サービス残業は違法!!
     br
     p
-      | 残業した分はしっかり出勤簿や給料明細に記載されていましたか？サービス残業と言う名目は存在しません。
-  .col-sm-1
+      | 残業した分はしっかり出勤簿や給料明細に記載されていましたか？サービス残業と言う名目は存在しません。あなたの証明があることにより、今までの残業代を請求することも可能です。
+  .col-sm-1.visible-md.visible-lg
     = image_tag "distress.jpg", height: '200px'
 br
 br
@@ -328,7 +327,7 @@ br
 /# inquiry image
 .row
   .col-sm-12.center
-    =link_to "#" do
+    =link_to "/contact" do
       =image_tag 'question1.png', width: '70%', class: 'center'
       
 br
@@ -345,8 +344,8 @@ br
     | のご案内
 table.company.center
   col[width="30%"]
-  col[width="35%"]
-  col[width="35%"]
+  col[width="20%"]
+  col[width="50%"]
   tbody
     tr
       th.arrow_box
@@ -363,7 +362,7 @@ table.company.center
            | 0円
       td.price 
         span
-           | 24,800円
+           | 25,000円
     tr
       th.arrow_box
         | 残業代請求交渉
@@ -372,7 +371,7 @@ table.company.center
            | 0円
       td.price 
         span
-           | 20%
+           | 受給額の20%(50,000円〜)
     tr
       th.arrow_box
         | 有休消化交渉
@@ -381,7 +380,7 @@ table.company.center
            | 0円
       td.price 
         span
-           | 20%(15,000円〜)
+           | 受給額の20%(15,000円〜)
     tr
       th.arrow_box
         | 雇用保険取得案内
@@ -390,7 +389,7 @@ table.company.center
            | 0円
       td.price 
         span
-           | 20%(15,000円〜)
+           | 受給額の20%(15,000円〜)
     tr
       th.arrow_box
         | 源泉徴収取得費
@@ -399,7 +398,7 @@ table.company.center
            | 0円
       td.price 
         span
-           | +5,000円
+           | 10,000円
     tr
       th.arrow_box
         | 解雇予告手当交渉
@@ -408,7 +407,7 @@ table.company.center
            | 0円
       td.price 
         span
-           | +10,000円
+           | 10,000円
     tr
       th.arrow_box
         | 退職理由交渉
@@ -417,7 +416,7 @@ table.company.center
            | 0円
       td.price 
         span
-           | +50,000円
+           | 30,000円
                                                                              
 .center
   small
@@ -428,7 +427,7 @@ br
 /# inquiry image
 .row
   .col-sm-12.center
-    =link_to "#" do
+    =link_to "/contact" do
       =image_tag 'question1.png', width: '70%', class: 'center'
       
 br
@@ -452,9 +451,9 @@ br
         | お問い合わせ頂き、ご納得頂いた上で約款からお申込み
     br
     p
-      | まずは退職トータルサポートへメール・ライン・チャット・電話いずれかの方法でご相談下さい。不安点が無くなった上で、弊社のお申込みフォームからお申込み頂きます。
+      | まずは退職トータルサポートへメール・電話いずれかの方法でご相談下さい。不安点が無くなった上で、弊社のお申込みフォームからお申込み頂きます。
   .col-sm-1
-    = image_tag "distress.jpg", height: '200px'
+    = image_tag "person3.jpg", height: '200px'
 br
 
 .row
@@ -466,9 +465,9 @@ br
         | お申込み内容に従って連絡開始
     br
     p
-      | お客様の指定の担当者に連絡を開始します。内容によってはお客様とやりとりをしながら進行して行きます。
+      | お客様の指定の連絡先・担当者に連絡を開始します。内容によってはお客様とやりとりをしながら進行して行きます。
   .col-sm-1
-    = image_tag "distress.jpg", height: '200px'
+    = image_tag "person1.jpg", height: '200px'
 br
 
 .row
@@ -480,9 +479,9 @@ br
         | 完了したらお支払い
     br
     p
-      | 業務完了後にお支払いが発生します。尚、成功しなかった場合については、その分の費用は一切頂戴しておりませんのでご安心下さい。
+      | 業務完了後にお支払いが発生します。尚、成功しなかった場合については、その部分の費用は一切頂戴しておりませんのでご安心下さい。
   .col-sm-1
-    = image_tag "distress.jpg", height: '200px'
+    = image_tag "person4.jpg", height: '200px'
 
 br
 br
@@ -502,6 +501,13 @@ br
 /# inquiry image
 .row
   .col-sm-12.center
-    =link_to "#" do
+    =link_to "/contact" do
       =image_tag 'question1.png', width: '70%', class: 'center'
       
+     
+br
+br
+br
+br
+
+
